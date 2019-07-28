@@ -3,6 +3,11 @@ name = "cinder-cli"
 version = "0.0.1"
 authors = ["Thao le <thaolt@songphi.com>"]
 edition = "2018"
+description = "CLI client for cinder CI/CD server"
+license-file = "LICENSE"
+homepage = "https://github.com/thaolt/cinder-cli"
+repository = "https://github.com/thaolt/cinder-cli"
+documentation = "https://github.com/thaolt/cinder-cli"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
