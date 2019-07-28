@@ -1,0 +1,43 @@
+name: myapp
+author: Kevin K. <kbknapp@gmail.com>
+about: Does awesome things
+settings:
+    - SubcommandRequiredElseHelp
+args:
+    - config:
+        short: c
+        long: config
+        value_name: FILE
+        help: Sets a custom config file
+        takes_value: true
+    - verbose:
+        short: v
+        multiple: true
+        help: Sets the level of verbosity
+subcommands:
+    - new:
+        settings:
+            - DisableVersion
+            - ArgRequiredElseHelp
+        about: create a new job
+        args:
+            - JOB:
+                help: job name
+                required: true
+                index: 1
+    - queue:
+        settings:
+            - DisableVersion
+            - ArgRequiredElseHelp
+        about: add a job to the queue
+        args:
+            - JOB:
+                help: job name
+                required: true
+                index: 1
+    - list:
+        settings:
+            - DisableVersion
+        about: list all jobs
+
+
